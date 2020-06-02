@@ -19,4 +19,16 @@ public class RegisterPage extends BasePage{
 		this.fillField("Password", user.getPassword());
 		this.clickButton("CREATE ACCOUNT");
 	}
+	
+	public void enterEmail(String email) {
+		this.fillField("E-mail", email);
+	}
+	
+	public void enterPhone(String phone) {
+		this.fillField("Phone number", phone);
+	}
+	
+	public void enterPassword(String password) {
+		this.fillField("Password", password);
+	}
 }

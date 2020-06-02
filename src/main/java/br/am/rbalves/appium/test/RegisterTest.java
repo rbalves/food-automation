@@ -1,6 +1,5 @@
 package br.am.rbalves.appium.test;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.net.MalformedURLException;
@@ -47,17 +46,16 @@ public class RegisterTest {
 	}
 	
 	@Test
-	public void registerValidUser() throws MalformedURLException {
+	public void accessTokenPage() throws MalformedURLException {
 		registerPage.register(validUser);
-		tokenPage.submitCode("1111");
-		assertTrue(homePage.confirmAccessPage());
+		assertTrue(tokenPage.confirmAccessPage());
 	}
 	
 	@Test
-	public void registerInvalidToken() throws MalformedURLException {
+	public void accessHomePage() throws MalformedURLException {
 		registerPage.register(validUser);
-		tokenPage.submitCode("2356");
-		assertFalse(homePage.confirmAccessPage());
+		tokenPage.submitCode("1111");
+		assertTrue(homePage.confirmAccessPage());
 	}
 
 }

@@ -26,4 +26,24 @@ public class TokenPage extends BasePage{
 		this.clickButton("SUBMIT CODE");
 	}
 	
+	public boolean confirmAccessPage() {
+		try {
+			return getText(getXpathTextViewByText("SUBMIT CODE")).intern() == "SUBMIT CODE";
+		}catch(Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public void inputToken(String token) {
+		
+		String tokenArray[] = new String[token.length()];
+		tokenArray = token.split("");
+		
+		for(int i = 0; i < token.length(); i++) {
+			this.clickNumber(tokenArray[i]);
+		}
+		
+	}
+	
 }

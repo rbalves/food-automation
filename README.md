@@ -17,6 +17,7 @@ After installing the JDK, it was necessary to perform the following steps:
 2. Edit the Path variable by adding% JAVA_HOME% \ bin;
 3. Confirm the installation using the java -version command
 
+
 - [Eclipse](https://www.eclipse.org/downloads/packages/)
 
 - [Appium Desktop 1.3.2](https://github.com/appium/appium-desktop/releases/tag/v1.3.2)
@@ -52,8 +53,10 @@ To run the test class, you need to access Run > Run as > JUnit Test.
 ## Dependencies
 - Appium Java Client 5.0.4
 - JUnit 4.12
+- Cucumber Java 1.2.6
+- Cucumber JUnit 1.2.6
 
 ## View project online execution
 
 To see the automation working, just access the link below:
-- [Automation video](https://www.loom.com/share/fb66d544dd90426baff103104309eab8)
+- [Automation video](https://www.loom.com/share/ad7ab4b02cbd44beb8e24f9ba4d340a6)
